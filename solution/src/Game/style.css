@@ -1,0 +1,25 @@
+#board {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+  width: 50%;
+  height: 100%;
+  margin: 40px auto;
+}
+
+#resetButton {
+  background-color: #b2ebf2;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: none;
+  display: block;
+  font-size: 1.5rem;
+  margin: 3% auto;
+  padding: 5px;
+  grid-column: 2;
+}
+
+#resetButton:hover {
+  background-color: #e5ffff;
+  cursor: pointer;
+}

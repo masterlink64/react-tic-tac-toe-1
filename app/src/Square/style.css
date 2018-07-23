@@ -1,0 +1,11 @@
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ghostwhite;
+  border: 1px solid black;
+  margin: 4px 2px;
+  height: 200px;
+  font-size: 176px;
+  border-radius: 4px;
+}
