@@ -18,7 +18,7 @@ export function didWin(board) {
   /* check diagonals */
 
   // left to right diagonal
-  if (hasWinner(board[0][1], board[1][1], board[2][2])) {
+  if (hasWinner(board[0][0], board[1][1], board[2][2])) {
     return true;
   }
 

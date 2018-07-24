@@ -3,7 +3,7 @@ import Square from '../Square';
 
 class Board extends Component {
   handleClick = (row, col) => {
-    if (!this.props.frozen) {
+    if (!this.props.frozen && this.props.board[row][col] === null) {
       this.props.takeTurn(row, col);
     }
   };
@@ -13,6 +13,7 @@ class Board extends Component {
       return row.map((squareVal, colIdx) => {
         return (
           <Square
+            id={`sq${rowIdx}${colIdx}`}
             val={squareVal}
             key={`${rowIdx}|${colIdx}`}
             handleClick={this.handleClick.bind(this, rowIdx, colIdx)}

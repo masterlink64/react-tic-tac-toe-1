@@ -60,9 +60,9 @@ class App extends Component {
     let over = false;
 
     if (didWin(updatedBoard)) {
-      winner = nextPlayer;
+      winner = this.state.currentPlayer;
       over = true;
-    } else if (nextTurn === 9) {
+    } else if (nextTurn === 10) {
       over = true;
     }
 
