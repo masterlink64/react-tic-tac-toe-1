@@ -41,7 +41,7 @@ describe('<Game />', () => {
     sq20.simulate('click');
 
     // assert that the game should still not be over
-    expect(wrapper.state().over).toBe(true);
+    expect(wrapper.state().over).toBe(false);
   });
 
   it('players can overwrite squares that have already been clicked and turn count increases', () => {
@@ -95,7 +95,7 @@ describe('<Game />', () => {
     expect(wrapper.state().winner).toBe(null);
     expect(wrapper.state().over).toBe(false);
     sq22.simulate('click');
-    expect(wrapper.state().winner).toBe('X');
-    expect(wrapper.state().over).toBe(true);
+    expect(wrapper.state().winner).toBe(null);
+    expect(wrapper.state().over).toBe(false);
   });
 });
